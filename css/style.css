@@ -92,6 +92,10 @@ section {
     opacity: 0.8;
 }
 
+#inicio{
+        background: #d0d7ed;
+    background: radial-gradient(circle, rgba(182, 186, 199, 0.564) 0%, rgba(255,255,255,1) 51%);
+}
 
 video{
     width: 100%;
