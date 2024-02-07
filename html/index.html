@@ -15,44 +15,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="navbar-lg">
-            <a href="#"><img src="../img/plus-circle.svg" alt=""></a>
-
+    <header id="inicio" role="banner">
+        <div class="navbar-lg" role="navigation">
             <div class="secciones-nav">
-                <a href="#" class="active"><img src="../img/reciclar.png" alt=""></a>
-                <a href="#"><img src="../img/tirar-basura.png" alt=""></a>
-                <a href="#"><img src="../img/fabrica-ecologica.png" alt=""></a>
+                <a href="#inicio" class="active" id="seccion1" role="menuitem"><img src="../img/leaf.png" alt=""></a>
             </div>
-
-            <a href="#"><img src="../img/reciclable.png" alt=""></a>
+            <div class="secciones-nav">
+                <a href="#concepto" id="seccion2" role="menuitem"><img src="../img/reciclar.png" alt=""></a>
+                <a href="#contenedores" id="seccion3" role="menuitem"><img src="../img/tirar-basura.png" alt=""></a>
+                <a href="#empresa" id="seccion4" role="menuitem"><img src="../img/fabrica-ecologica.png" alt=""></a>
+            </div>
+            <div class="secciones-nav">
+                <a href="#formulario" id="seccion5" role="menuitem"><img src="../img/reciclable.png" alt=""></a>
+            </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" role="navigation">
             <div class="container">
+                <a class="navbar-brand" href="#"><img style="width: 40px;" src="../img/leaf.png" alt="Logo"></a>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto gap-3">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Podcast</a>
-                        <a class="nav-link" href="#">Servicios</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                    <div class="navbar-nav ms-auto gap-3" role="menubar">
+                        <a class="nav-link active" aria-current="page" href="#inicio" role="menuitem">Inicio</a>
+                        <a class="nav-link" href="#concepto" role="menuitem">Concepto</a>
+                        <a class="nav-link" href="#contenedores" role="menuitem">Contenedores</a>
+                        <a class="nav-link" href="#empresa" role="menuitem">Empresa</a>
+                        <a class="nav-link" href="#formulario" role="menuitem">Dudas</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <section>
+    <section id="inicio" role="region" aria-labelledby="titulo-inicio">
+        <div class="container-fluid presentacion">
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/Logo.svg" alt="Logo">
+                    </div>
+                    <video autoplay loop muted>
+                        <source src="../video/video-_2160p_.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="col-lg-12 pb-2">
+                    <h1 class="text-center" id="titulo-inicio">Bienvenidos a <span class="marca" id="dynamic-text">eco </span><span class="registrada">®</span></h1>
+                    <h2 class="text-center">Una nueva manera de entender el reciclaje.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="concepto" role="region" aria-labelledby="titulo-concepto">
         <div class="fondo container w-75">
-            <h1>¿Que es reciclar?</h1>
+            <h1 id="titulo-concepto">¿Qué es reciclar?</h1>
             <div class="row">
                 <div class="col-lg-12 p-4">
                     <div class="card text-bg-light shadow-sm border-0">
@@ -62,9 +86,12 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="card-body">
-                                    <h5 class="card-title display-6">Accesos libres</h5>
-                                    <p class="card-text pt-3">Ofrecemos acceso a una amplia variedad de podcast,
-                                        desde los más populares hasta gamas ocultas.
+                                    <h5 class="card-title display-6">Definimos el concepto...</h5>
+                                    <p class="card-text pt-3">
+                                        El reciclaje es el proceso de convertir materiales usados en nuevos productos
+                                        para evitar el desperdicio y conservar recursos naturales. Ayuda a reducir la
+                                        contaminación y la energía necesaria para producir nuevos materiales,
+                                        promoviendo así la sostenibilidad ambiental.
                                     </p>
                                 </div>
                             </div>
@@ -78,9 +105,14 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="card-body">
-                                    <h5 class="card-title display-6">Accesos libres</h5>
-                                    <p class="card-text pt-3">Ofrecemos acceso a una amplia variedad de podcast,
-                                        desde los más populares hasta gamas ocultas.
+                                    <h5 class="card-title display-6">Impacto ambiental</h5>
+                                    <p class="card-text pt-3">
+                                        El reciclaje reduce la necesidad de extraer,
+                                        fabricar y procesar materias primas, lo que a su vez disminuye la contaminación
+                                        del aire y el agua,
+                                        conserva recursos naturales como la energía y el agua, y contribuye a la
+                                        mitigación del cambio climático al reducir las emisiones de gases de efecto
+                                        invernadero.
                                     </p>
                                 </div>
                             </div>
@@ -91,9 +123,104 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
 
+    <section id="contenedores" role="region" aria-labelledby="titulo-contenedores">
+        <div class="fondo3 container w-75">
+            <h1 id="titulo-contenedores">¿Cómo reciclamos?</h1>
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center mt-3">
+                    <img class="img-fluid" src="../img/contenedores.png" alt="contenedores">
+                </div>
+                <div class="col-lg-12 fondo2">
+                    <h2 class="text-center mt-3">La importancia de los contenedores</h2>
+                    <p class="mt-4">
+                        Los contenedores de reciclaje son fundamentales para fomentar una cultura de reciclaje
+                        eficiente.
+                        Estos recipientes facilitan la separación y el depósito adecuado de materiales reciclables,
+                        lo que contribuye directamente a la reducción de desechos y a la conservación de recursos
+                        naturales.
+                        Además, promueven la conciencia ambiental al proporcionar un medio conveniente y accesible para
+                        que las personas participen activamente en la protección del medio ambiente.
+                        En resumen, los contenedores de reciclaje desempeñan un papel crucial en la promoción de
+                        prácticas sostenibles y en la preservación del planeta para las generaciones futuras.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="empresa" role="region" aria-labelledby="titulo-empresa">
+        <div class="fondo container w-75">
+            <h1 id="titulo-empresa">¿Cómo afectan las empresas?</h1>
+            <div class="row pt-4">
+                <div class="col-lg-6">
+                    <img class="rounded-3 w-100 mb-3" src="../img/chimenea.jpg" alt="chimenea">
+                </div>
+                <div class="col-lg-6">
+                    <p class="rounded-3 p-2">
+                        Las empresas son una fuente importante de contaminación debido a sus actividades industriales.
+                        Para contrarrestar esto, el reciclaje juega un papel crucial.
+                        Implementar programas de reciclaje ayuda a reducir desechos, conservar recursos y ahorrar
+                        costos.
+                        Además, al fomentar el reciclaje entre empleados y comunidades,
+                        las empresas pueden mejorar su imagen y contribuir a un cambio cultural hacia la sostenibilidad.
+                        En resumen, el reciclaje es clave para mitigar el impacto ambiental de las empresas y promover
+                        un futuro más limpio y sostenible.
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded-3 mb-3" src="../img/cabeza1.jpg" alt="arena">
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid rounded-3" src="../img/cabeza2.jpg" alt="bidon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fondoform" id="formulario" role="region" aria-labelledby="titulo-formulario">
+        <div class="container d-flex justify-content-center">
+            <form aria-labelledby="titulo-formulario">
+                <h1 class="text-center pb-3" id="titulo-formulario">¿Alguna duda?</h1>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">No compartiremos tus datos con nadie.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-floating mb-4">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Déjanos tu comentario...</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid d-flex justify-content-center p-4">
+            <div class="row">
+                <div class="col-12">
+                    <p>Página web creada por Diego García Rocha</p>
+                    <div class="d-flex justify-content-around text-center pt-2 iconos">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
 
 </body>
 
