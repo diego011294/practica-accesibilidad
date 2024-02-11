@@ -7,7 +7,7 @@
 
 body{
     background: #d0d7ed;
-    background: radial-gradient(circle, rgba(208,215,237,1) 0%, rgba(255,255,255,1) 51%);
+    background: radial-gradient(circle, rgba(208,215,237,1) 0%, rgba(255,255,255,1) 30%);
     
 }
 
@@ -22,8 +22,9 @@ body{
     border-radius: 0 20px 20px 0;
     justify-content: space-between;
     padding-left: 10px;
-    background: rgb(182,186,199);
+    background: #b6bac7;
     background: linear-gradient(180deg, rgba(182,186,199,1) 24%, rgba(255,255,255,1) 100%);
+    box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-lg img{
